@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Task</title>
+</head>
+<style>
+    h1{
+        text-align: center;
+    }
+    #question{
+        text-align: center;
+    }
+    a{
+        margin-left: 45%;
+    }
+    table{
+        margin: auto;
+    }
+
+     table,th,td{
+          
+            border: 2px solid black;
+            border-collapse:collapse;
+            padding: 12px;
+            text-align: center;
+
+    }
+    input{
+        margin:12px;
+        align-content: center;
+    }
+    #form-elements{
+     margin-left: 43%;
+    }
+</style>
+<body>
+
+
+    <p id="question">5.Create an element that helps you to open the https://google.com in separate new tab.</p>
+    <a href=" https://google.com" target="_blank" > GOOGLE LINK</a>
+
+    <!-- 8.) Table question -->
+    <p id="question">8.Use the table tag to design given image </p>
+    <table>
+      <h1>Health Chart</h1>
+      <tr>
+        <th  rowspan= "2" style="padding: 30px;">
+            State of Health
+           
+        </th>
+        <th colspan="2">
+            Fasting Value
+        </th>
+        <th >
+            After Eating
+        </th>
+      </tr>
+      <tr>
+        <td>
+            Minimum
+        </td>
+        <td>
+            Maximum
+        </td>
+        <td>
+            2 hours after eating
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Healthy
+        </td>
+        <td>
+            70
+        </td>
+        <td>
+            100
+        </td>
+        <td>
+            Less than 140
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Pre-Diabetes
+        </td>
+        <td>
+            101
+        </td>
+        <td>
+            126
+        </td>
+        <td>
+            140 to 200
+        </td>
+      </tr>
+      <tr>
+        <td>
+            Diabetes
+        </td>
+        <td>
+            More than 126
+        </td>
+        <td>
+            N/A
+        </td>
+        <td>
+            More than 200
+        </td>
+      </tr>
+    </table>
+
+
+    <br>
+
+
+    <!--9.) Write HTML input tags snippet to show default values for all Form elements. -->
+    <div id="form-container">
+    <form style="margin: auto;">
+        <h1>Contact us</h1>
+        <div id="form-elements">
+        <label for="name">Name: </label> 
+        <input type="text" name="name" id="name" placeholder="Enter Your Name" required><br>
+        <label for="Age">Age: </label>
+        <input type="number" name="Age" id="Age" placeholder="Enter Your Age"  required><br>
+        <label for="mobile">Mobile: </label>
+        <input type="tel" name="mobile" id="mobile" placeholder="Enter Your Number"  required><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+       </div>
+    </form>
+    </div>
+    <p id="question"> 10.In your, HTML page add the below line and Highlight it without using any CSS.
+        "HTML & CSS is awesome"</p>
+    <h1><mark>HTML&CSS is awesome</mark></h1>
+    <p id="question">11.Create an HTML page, which should contain all types of input elements.</p>
+    <div id="form-container">
+        <form style="margin: auto;">
+            <h1>Basic Form</h1>
+            <div id="form-elements">
+            <label for="name">Name: </label> 
+            <input type="text" name="name" id="name" placeholder="Enter Your Name" required><br>
+            <label for="Age">Age: </label>
+            <input type="number" name="Age" id="Age" placeholder="Enter Your Age"  required><br>
+            <label for="mobile">Mobile: </label>
+            <input type="tel" name="mobile" id="mobile" placeholder="Enter Your Number"  required><br>
+            <label for="DOB">Date of Birth :</label>
+            <input type="date" name="date"/><br>
+            <label for="gender">Select Your Gender: </label>
+            <input type="radio" name="gender" id="male">
+            <label for="gender">Male </label>
+            <input type="radio" name="gender" id="female">
+            <label for="gender">Female </label><br>
+            <label for="courses"> Select Your Course:</label>
+            <select name="courses">
+                <option value="Full stack development">Full stack development</option>
+                <option value="FrontEnd">FrontEnd</option>
+                <option value="Backend">Backend</option>
+                <option value="data">Data Science</option>
+                <option value="ui-ux">UI UX</option>
+            </select>
+    
+            <p>Select Your Language : </p>
+            <ul style="list-style-type: none ;">
+                <li>
+                    <input type="radio" name="language" value="Tamil"/>
+                   Tamil
+                </li>
+                <li>
+                    <input type="radio" name="language" value="english"/>
+                    English
+                </li>
+                <li>
+                    <input type="radio" name="language" value="hindi"/>
+                    Hindi
+                </li>
+                <li>
+                    <input type="radio" name="language" value="kannada"/>
+                    Kannada
+                </li>
+            </ul>
+            <label>Address: </label>
+            <textarea name="txtarea" rows="2" cols="40" placeholder="Enter Your Address"></textarea><br>
+            
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+           </div>
+        </form>
+        </div>
+</body>
+</html>
